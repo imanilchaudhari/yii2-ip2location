@@ -1,14 +1,19 @@
+Yii2 IP2Location
+=======================
 This extension provides the IP2Location integration for the Yii2 framework.
+
 Installation
+------------
+*   Download
+*   Extract this package to frontend/components
 
-    Download
-    Extract this package to frontend/components
-
-    Composer installation is coming soon.
+``` Composer installation is coming soon. ```
 
 Quick Start
+-----------
 
 Use the following methods to retrieve geolocation information. * Add following lines into main.php configuration file:
+```php
 
 'components' => [
      'ip2location' => [
@@ -17,9 +22,11 @@ Use the following methods to retrieve geolocation information. * Add following l
         'mode' => 'FILE_IO',
     ],
 ]
+```
 
 Usage
-
+-----
+```php
 $ip = Yii::$app->request->userIP
 
 $countryCode = Yii::$app->ip2location->getCountryCode($ip);
@@ -42,20 +49,22 @@ $mnc = Yii::$app->ip2location->getMNC($ip);
 $mobileCarrierName = Yii::$app->ip2location->getMobileCarrierName($ip);
 $elevation = Yii::$app->ip2location->getElevation($ip);
 $usageType = Yii::$app->ip2location->getUsageType($ip);
-
+```
 Key Notes
+---------
 
-Double check your php.ini for whether
-
+You must have enabled php_gmp.dll extension in php.ini
+```
 extension=php_gmp.dll
+```
 
-is enabled or not.
+
 Database Update
+---------------
 
 IP2Location database is updated monthly. You can get the latest database from http://www.ip2location.com (Commercial version) or http://lite.ip2location.com (Free version).
+
 Resources
+---------
 
-    IP2Location
-
-    ImAnilChaudhari/Yii2-IP2Location
-    IP2Location-PHP-Module
+    [IP2Location](http://www.ip2location.com/).
