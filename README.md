@@ -66,5 +66,4 @@ IP2Location database is updated monthly. You can get the latest database from ht
 
 Resources
 ---------
-
-    [IP2Location](http://www.ip2location.com/).
+[IP2Location](http://www.ip2location.com/).
