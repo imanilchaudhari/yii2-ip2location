@@ -4,7 +4,7 @@ This extension provides the IP2Location integration for the Yii2 framework.
 
 Installation
 ------------
-*   [Download](https://github.com/ImAnilChaudhari/yii2-ip2location/archive/master.zip).
+*   [Download](http://www.yiiframework.com/extension/yii2-ip2location/files/IP2Location.zip).
 *   Extract this package to frontend/components
 
 ``` Composer installation is coming soon. ```
